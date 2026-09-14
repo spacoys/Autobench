@@ -1,0 +1,22 @@
+benchmark:
+  name: "ragbench_cuad_sample"
+  path: "data/ragbench_cuad_sample.json"
+  format: "json"
+  has_context: true
+  question_column: "question"
+  answer_column: "answer"
+  context_column: "document"
+
+model:
+  name: "openai/gpt-oss-20b"
+  temperature: 0.1
+  max_tokens: 512
+  use_context: true
+
+evaluation:
+  metrics: ["exact_match", "f1", "bert_score"]
+  numeric_tolerance: 1e-5
+
+output:
+  results_dir: "results/"
+  save_detailed: true

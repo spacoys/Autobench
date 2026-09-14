@@ -1,0 +1,22 @@
+benchmark:
+  name: "calc_finqa"
+  path: "data/calc_finqa_sample.json"
+  format: "json"
+  has_context: true
+  question_column: "question"
+  answer_column: "answer"
+  context_column: "document"
+
+model:
+  name: "groq/compound-mini"
+  temperature: 0.1
+  max_tokens: 256
+  use_context: true
+
+evaluation:
+  metrics: ["exact_match", "f1", "numeric_match", "bert_score"]
+  numeric_tolerance: 1e-3
+
+output:
+  results_dir: "results/"
+  save_detailed: true
