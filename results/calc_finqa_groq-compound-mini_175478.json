@@ -1,0 +1,56 @@
+{
+  "summary": {
+    "exact_match": 0.0,
+    "f1": 0.05714285714285714,
+    "numeric_match": 0.6,
+    "bert_score": 0.6428067564964295
+  },
+  "detailed": [
+    {
+      "predicted": "ROA = 44.691 ÷ 633.696 ≈ 0,0706, то есть ≈ 7,06 %.",
+      "true": "0.0705",
+      "exact_match": false,
+      "f1": 0.0,
+      "numeric_match": true,
+      "bert_score": 0.6709129214286804
+    },
+    {
+      "predicted": "ROE = 0.4769 (≈ 47.69 %).",
+      "true": "0.4769",
+      "exact_match": false,
+      "f1": 0.2857142857142857,
+      "numeric_match": true,
+      "bert_score": 0.7103897929191589
+    },
+    {
+      "predicted": "Коэффициент текущей ликвидности = 531.344 ÷ 535.794 ≈ 0,99.",
+      "true": "0.99",
+      "exact_match": false,
+      "f1": 0.0,
+      "numeric_match": true,
+      "bert_score": 0.6477866768836975
+    },
+    {
+      "predicted": "В контексте нет информации о полном наименовании компании с ИНН 1000000701.",
+      "true": "ПАО «Импульс 965»",
+      "exact_match": false,
+      "f1": 0.0,
+      "numeric_match": false,
+      "bert_score": 0.607297956943512
+    },
+    {
+      "predicted": "В предоставленном контексте ИНН компании не указан.",
+      "true": "1000000701",
+      "exact_match": false,
+      "f1": 0.0,
+      "numeric_match": false,
+      "bert_score": 0.5776464343070984
+    }
+  ],
+  "metadata": {
+    "num_examples": 5,
+    "model": "groq/compound-mini",
+    "benchmark": "calc_finqa",
+    "elapsed_seconds": 6.787928342819214
+  }
+}

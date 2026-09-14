@@ -1,0 +1,44 @@
+{
+  "summary": {
+    "numeric_match": 0.6,
+    "exact_match": 0.0
+  },
+  "detailed": [
+    {
+      "predicted": "ROA ≈ 44.691 ÷ 633.696 ≈ 0.0706 ≈ 7.06 %.",
+      "true": "0.0705",
+      "numeric_match": true,
+      "exact_match": false
+    },
+    {
+      "predicted": "ROE = 0.4769 ≈ 47.7 %.",
+      "true": "0.4769",
+      "numeric_match": true,
+      "exact_match": false
+    },
+    {
+      "predicted": "Коэффициент текущей ликвидности ≈ 0,99.",
+      "true": "0.99",
+      "numeric_match": true,
+      "exact_match": false
+    },
+    {
+      "predicted": "В контексте нет полного наименования компании.",
+      "true": "ПАО «Импульс 965»",
+      "numeric_match": false,
+      "exact_match": false
+    },
+    {
+      "predicted": "В предоставленном контексте ИНН не указан.",
+      "true": "1000000701",
+      "numeric_match": false,
+      "exact_match": false
+    }
+  ],
+  "metadata": {
+    "num_examples": 5,
+    "model": "groq/compound-mini",
+    "benchmark": "calc_finqa",
+    "elapsed_seconds": 6.4023871421813965
+  }
+}

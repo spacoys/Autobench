@@ -1,0 +1,56 @@
+{
+  "summary": {
+    "exact_match": 0.2,
+    "f1": 0.3571428571428571,
+    "numeric_match": 0.4,
+    "bert_score": 0.8095451593399048
+  },
+  "detailed": [
+    {
+      "predicted": "Implosion of Heaven, Ubiquitous Absence of Remission, Shining.",
+      "true": "['Implosion of Heaven', 'Ubiquitous Absence of Remission', 'Shining']",
+      "exact_match": false,
+      "f1": 0.2857142857142857,
+      "numeric_match": false,
+      "bert_score": 0.8346659541130066
+    },
+    {
+      "predicted": "1994",
+      "true": "1994",
+      "exact_match": true,
+      "f1": 1.0,
+      "numeric_match": true,
+      "bert_score": 0.9999999403953552
+    },
+    {
+      "predicted": "2008",
+      "true": "2021",
+      "exact_match": false,
+      "f1": 0.0,
+      "numeric_match": false,
+      "bert_score": 0.7714946866035461
+    },
+    {
+      "predicted": "В 2000 году было выпущено 3 релиза.",
+      "true": "3",
+      "exact_match": false,
+      "f1": 0.25,
+      "numeric_match": true,
+      "bert_score": 0.6269931197166443
+    },
+    {
+      "predicted": "Kylähullut, Children of Bodom.",
+      "true": "['Kylähullut', 'Children of Bodom']",
+      "exact_match": false,
+      "f1": 0.25,
+      "numeric_match": false,
+      "bert_score": 0.8145720958709717
+    }
+  ],
+  "metadata": {
+    "num_examples": 5,
+    "model": "groq/compound-mini",
+    "benchmark": "tableqa_ruwiki",
+    "elapsed_seconds": 3.935840129852295
+  }
+}
